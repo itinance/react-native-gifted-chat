@@ -6,7 +6,7 @@ import {
   View,
 } from 'react-native';
 
-import {GiftedChat, Actions, Bubble} from 'react-native-gifted-chat';
+import {GiftedChat, Actions, Bubble} from './src/react-native-gifted-chat';
 import CustomActions from './CustomActions';
 import CustomView from './CustomView';
 
@@ -194,6 +194,7 @@ export default class Example extends React.Component {
         loadEarlier={this.state.loadEarlier}
         onLoadEarlier={this.onLoadEarlier}
         isLoadingEarlier={this.state.isLoadingEarlier}
+        isAnimated={true}
 
         user={{
           _id: 1, // sent messages should have same user._id

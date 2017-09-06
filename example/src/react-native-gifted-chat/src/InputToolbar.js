@@ -28,7 +28,6 @@ export default class InputToolbar extends React.Component {
   }
 
   renderComposer() {
-
     if (this.props.renderComposer) {
       return this.props.renderComposer(this.props);
     }
@@ -67,9 +66,11 @@ export default class InputToolbar extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: 'yellow',
+    height:200,
     borderTopWidth: StyleSheet.hairlineWidth,
     borderTopColor: '#b2b2b2',
-    backgroundColor: '#FFFFFF',
+    // backgroundColor: '#FFFFFF',
   },
   primary: {
     flexDirection: 'row',
